@@ -2,58 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avalon Munoz</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Avalon Munoz - Computer Science Graduate</title>
+    <meta name="description" content="Avalon Munoz - Computer Science Graduate, Software Developer, and Problem Solver. Explore my portfolio showcasing projects in algorithms, security, and web development." />
+    
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/basketball4.jpg" as="image" />
   </head>
   <body>
-    <header class="hero">
-      <h1><span class="name">Avalon Munoz</span></h1><div>avalonmunoz78@gmail.com</div>
-      <h3>Computer Science/Software Engineer</h2>
-      <p class="subtitle">I create projects I learn in my different courses.</p>
-      <ul>
-        <li>
-          <a href="https://github.com/AvalonLucero" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/avalon-munoz/" target="_blank">LinkedIn</a>
-        </li>
-      </ul>
-    </header>
-
-    <main>
-      <section id="about">
-        <h2 class="section-heading">About Me</h2>
-        <img src="profile.jpg" alt="Avalon Munoz" class="profile-img">
-        <div class="about-content">
-          I am a UTPB Women's Basketball Alum where I played for five years as a captain while earning my Bachelors and Masters in Computer Science. I am from San Antonio, Texas and started to love coding in my high school starting with Scratch and BlueJay.
-        </div>
-        <div class="about-skills"><h3>My Skills</h3></div>
-        <div class="skills">HTML, CSS, Java, JavaScript, Python</div>
-      </section>
-
-      <section id="projects">
-        <h2 class="section-heading">Projects</h2>
-        <div class="project-content">
-          <h3>Simple Project</h3>
-          <div class="project-content-details">
-            <p>This is one of my projects.</p>
-            <a href="#" class="btn">Project1</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2 class="section-heading">Contact Me</h2>
-        <div class="contact-content">
-          <p>Feel free to reach out via <a href="mailto:avalonmunoz78@gmail.com">email</a> or check my resume below:</p>
-          <a href="resume.pdf" class="btn" download>Download My Resume</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Avalon Munoz</p>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

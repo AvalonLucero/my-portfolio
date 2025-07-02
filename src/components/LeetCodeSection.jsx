@@ -1,9 +1,24 @@
 import React, { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { motion } from 'framer-motion';
 
 const LeetCodeSection = () => {
   const [activeTerminals, setActiveTerminals] = useState({});
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.8, ease: "easeOut" }
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
 
   const leetcodeProblems = [
     {
@@ -313,11 +328,20 @@ f(7) = 21`;
   };
 
   return (
-    <section id="leetcode" className="section">
-      <h2 className="section-heading">LeetCode Solutions</h2>
-      <div className="leetcode-grid">
+    <motion.section 
+      id="leetcode" 
+      className="section"
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={staggerContainer}
+    >
+      <motion.h2 className="section-heading" variants={fadeInUp}>
+        LeetCode Solutions
+      </motion.h2>
+      <motion.div className="leetcode-grid" variants={staggerContainer}>
         {leetcodeProblems.map((problem) => (
-          <div key={problem.id} className="glass-card leetcode-card">
+          <motion.div key={problem.id} className="glass-card leetcode-card" variants={fadeInUp}>
             <div className="leetcode-header">
               <div>
                 <h3>{problem.title}</h3>
@@ -398,10 +422,10 @@ f(7) = 21`;
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
