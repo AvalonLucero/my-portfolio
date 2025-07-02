@@ -124,9 +124,11 @@ function App() {
             About Me
           </motion.h2>
           <motion.div className="about-content" variants={fadeInUp}>
-            {/* <motion.div className="profile-photo" variants={scaleIn}>
+            {/* 
+            <motion.div className="profile-photo" variants={scaleIn}>
               <img src={Photo} alt="Avalon Munoz - Computer Science Graduate" />
-            </motion.div>*/}
+            </motion.div>
+            */}
             <div className="bio">
               <motion.p variants={fadeInUp}>
                 I'm a passionate Computer Science graduate with a Master's degree and expertise in
