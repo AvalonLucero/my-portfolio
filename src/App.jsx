@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-import Photo from "./basketball4.jpg";
+//import Photo from "./basketball4.jpg";
 import LeetCodeSection from "./components/LeetCodeSection";
 
 function App() {
